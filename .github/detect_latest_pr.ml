@@ -11,7 +11,7 @@ type config =
   ; mutable verbose : bool
   }
 
-let config = { user = "Kakadu"; repo = ""; user_branch = "master"; mode = PR; verbose = false }
+let config = { user = "artemkhel"; repo = ""; user_branch = "master"; mode = PR; verbose = false }
 let eprintfn fmt = Format.kasprintf (Printf.eprintf "%s\n%!") fmt
 let log fmt = Format.kasprintf (fun s -> if config.verbose then Printf.eprintf "%s\n%!" s) fmt
 
